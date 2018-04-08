@@ -79,10 +79,6 @@ class NotesReverseQuoteCommand(sublime_plugin.TextCommand):
         print(len(res))
         for i in range(len(res) - 1, -1, -1):
             content = content + res[i][0] + '\n\n'
-            print(i)
-
-
-       
 
         self.view.run_command('cut')
         self.view.insert(edit, 0, content)
