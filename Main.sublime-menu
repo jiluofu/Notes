@@ -1,0 +1,18 @@
+[
+    {
+    	"id": "tools",
+        "mnemonic": "n",
+    	"caption": "Tools",
+        "children": [
+
+            {
+                "command": "notes_format",
+                "caption": "Notes format"
+            },
+            {
+                "command": "notes_add_quote",
+                "caption": "Notes add quote"
+            }
+        ]
+    }
+]

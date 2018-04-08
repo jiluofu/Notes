@@ -1,0 +1,12 @@
+[
+    {
+        "keys": ["ctrl+alt+shift+f"], "command": "notes_format"
+    },
+    {
+        "keys": ["ctrl+alt+shift+q"], "command": "notes_add_quote"
+    },
+    {
+        "keys": ["ctrl+alt+shift+r"], "command": "notes_reverse_quote"
+    }
+
+]
