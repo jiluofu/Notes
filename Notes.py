@@ -84,3 +84,22 @@ class NotesReverseQuoteCommand(sublime_plugin.TextCommand):
         self.view.insert(edit, 0, content)
         sublime.set_clipboard('')
 
+class NotesDeleteBraketsCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+
+        self.view.run_command('select_all')
+        content = self.view.substr(self.view.sel()[0]).strip()
+
+        pa = re.compile(r'(【)(.*?)(】)', re.S)
+        content = re.sub(pa, '', content)
+
+        self.view.run_command('cut')
+        self.view.insert(edit, 0, content)
+        sublime.set_clipboard('')
+
+
+
+
+
+
+

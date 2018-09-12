@@ -7,6 +7,9 @@
     },
     {
         "keys": ["ctrl+alt+shift+r"], "command": "notes_reverse_quote"
+    },
+    {
+        "keys": ["ctrl+alt+shift+p"], "command": "notes_delete_brakets"
     }
 
 ]
