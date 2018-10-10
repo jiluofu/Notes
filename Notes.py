@@ -90,7 +90,7 @@ class NotesDeleteBraketsCommand(sublime_plugin.TextCommand):
         self.view.run_command('select_all')
         content = self.view.substr(self.view.sel()[0]).strip()
 
-        pa = re.compile(r'(【)(.*?)(】)', re.S)
+        pa = re.compile(r'(【)(.*?)(】[\s]*)', re.S)
         content = re.sub(pa, '', content)
 
         self.view.run_command('cut')
