@@ -43,6 +43,7 @@ class NotesAddQuoteCommand(sublime_plugin.TextCommand):
 
         self.view.run_command('select_all')
         content = self.view.substr(self.view.sel()[0]).strip()
+        content = content.replace('>> ', '')
 
         pa = r'[\n]'
         pa = re.compile(pa, re.M)
